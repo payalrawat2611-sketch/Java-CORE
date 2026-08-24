@@ -14,6 +14,3 @@ I am using this repository to keep track of the problems I solve, concepts I pra
 * Problem-solving practice
 
 More topics will be added as I progress through DSA.
-## Goal
-
-Build a strong foundation in DSA through regular practice and gradually move towards solving more complex problems.
