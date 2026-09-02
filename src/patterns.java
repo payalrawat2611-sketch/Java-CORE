@@ -68,12 +68,31 @@ public class patterns {
     }
 
     // pattern 6 :
-    static void patternPrint(int n) {
+    static void pattern6(int n) {
 
         for (int i = 0; i < n; i++) {
 
             for (int j = 0; j < n - i; j++) {
                 System.out.print((j + 1) + " ");
+            }
+
+            System.out.println();
+        }
+    }
+
+    // pattern 7 :
+    static void pattern7(int n) {
+
+        for (int i = 0; i < n; i++) {
+
+            // spaces
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
+            }
+
+            // stars
+            for (int j = 0; j < 2 * i + 1; j++) {
+                System.out.print("*");
             }
 
             System.out.println();
