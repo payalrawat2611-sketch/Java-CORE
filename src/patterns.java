@@ -274,4 +274,18 @@ public class patterns {
         }
     }
 
+    // pattern 18 :
+    static void pattern18(int n) {
+
+        for (int i = 0; i < n; i++) {
+
+            // characters
+            for (int j = 0; j <= i; j++) {
+                System.out.print((char) ('A' + n - i - 1 + j));
+            }
+
+            System.out.println();
+        }
+    }
+
 }
