@@ -154,5 +154,28 @@ public class patterns {
         }
     }
 
+    // pattern 10 :
+    static void pattern10(int n) {
+
+        // increasing
+        for (int i = 0; i < n; i++) {
+
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+        // decreasing
+        for (int i = 0; i < n - 1; i++) {
+
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
 
 }
