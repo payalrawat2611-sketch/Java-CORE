@@ -195,51 +195,33 @@ public class patterns {
         }
     }
 
-    // pattern 12 :
-    static void pattern12(int n) {
+    // pattern 13 :
+    static void pattern13(int n) {
+
+        int number = 1;
 
         for (int i = 1; i <= n; i++) {
 
-            // left numbers
             for (int j = 1; j <= i; j++) {
-                System.out.print(j);
-            }
-
-            // spaces
-            for (int j = 1; j <= 2 * (n - i); j++) {
-                System.out.print(" ");
-            }
-
-            // right numbers
-            for (int j = i; j >= 1; j--) {
-                System.out.print(j);
+                System.out.print(number + " ");
+                number++;
             }
 
             System.out.println();
         }
     }
 
-    // pattern 12 :
-    static void pattern12(int n) {
+    // pattern 14 :
+    static void pattern14(int n) {
 
-        for (int i = 1; i <= n; i++) {
+        for (int i = 0; i < n; i++) {
 
-            // left numbers
-            for (int j = 1; j <= i; j++) {
-                System.out.print(j);
-            }
-
-            // spaces
-            for (int j = 1; j <= 2 * (n - i); j++) {
-                System.out.print(" ");
-            }
-
-            // right numbers
-            for (int j = i; j >= 1; j--) {
-                System.out.print(j);
+            for (int j = 0; j <= i; j++) {
+                System.out.print((char) ('A' + j));
             }
 
             System.out.println();
         }
     }
+
 }
