@@ -250,4 +250,28 @@ public class patterns {
         }
     }
 
+    // pattern 17 :
+    static void pattern17(int n) {
+
+        for (int i = 0; i < n; i++) {
+
+            // spaces
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
+            }
+
+            // characters
+            for (int j = 0; j <= i; j++) {
+                System.out.print((char) ('A' + j));
+            }
+
+            // characters in reverse
+            for (int j = i - 1; j >= 0; j--) {
+                System.out.print((char) ('A' + j));
+            }
+
+            System.out.println();
+        }
+    }
+
 }
