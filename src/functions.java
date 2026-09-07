@@ -184,4 +184,150 @@ class function {
 
         return original == reverse;
     }
+    // 21. Check Armstrong number
+    static boolean isArmstrong(int n) {
+
+        int original = n;
+        int digits = countDigits(n);
+        int sum = 0;
+
+        while (n != 0) {
+
+            int digit = n % 10;
+            sum = sum + (int) Math.pow(digit, digits);
+            n = n / 10;
+        }
+
+        return original == sum;
+    }
+
+
+    // 22. Find factorial
+    static long factorial(int n) {
+
+        long fact = 1;
+
+        for (int i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+
+        return fact;
+    }
+
+
+    // 23. Generate Fibonacci series
+    static void fibonacci(int n) {
+
+        int a = 0;
+        int b = 1;
+
+        for (int i = 1; i <= n; i++) {
+
+            System.out.print(a + " ");
+
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+    }
+
+
+    // 24. Find GCD
+    static int gcd(int a, int b) {
+
+        while (b != 0) {
+
+            int remainder = a % b;
+            a = b;
+            b = remainder;
+        }
+
+        return a;
+    }
+
+
+    // 25. Find LCM
+    static int lcm(int a, int b) {
+
+        return (a * b) / gcd(a, b);
+    }
+
+
+    // 26. Check perfect number
+    static boolean isPerfect(int n) {
+
+        int sum = 0;
+
+        for (int i = 1; i < n; i++) {
+
+            if (n % i == 0) {
+                sum = sum + i;
+            }
+        }
+
+        return sum == n;
+    }
+
+
+    // 27. Check strong number
+    static boolean isStrong(int n) {
+
+        int original = n;
+        int sum = 0;
+
+        while (n != 0) {
+
+            int digit = n % 10;
+            sum = sum + (int) factorial(digit);
+            n = n / 10;
+        }
+
+        return original == sum;
+    }
+
+
+    // 28. Calculate power
+    static long power(int base, int exponent) {
+
+        long result = 1;
+
+        for (int i = 1; i <= exponent; i++) {
+            result = result * base;
+        }
+
+        return result;
+    }
+
+
+    // 29. Calculate sum from 1 to n
+    static int sumToN(int n) {
+
+        int sum = 0;
+
+        for (int i = 1; i <= n; i++) {
+            sum = sum + i;
+        }
+
+        return sum;
+    }
+
+
+    // 30. Count frequency of a digit
+    static int digitFrequency(int n, int target) {
+
+        int count = 0;
+
+        while (n != 0) {
+
+            int digit = n % 10;
+
+            if (digit == target) {
+                count++;
+            }
+
+            n = n / 10;
+        }
+
+        return count;
+    }
 }
