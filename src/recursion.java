@@ -1,10 +1,5 @@
 public class recursion {
-
-    // ============================================================
-    // LEVEL 3 — RECURSION + STRINGS
-    // ============================================================
-
-    // R19. Print characters of a string
+ // R19. Print characters of a string
     static void printString(String str, int index) {
         if (index == str.length()) {
             return;
@@ -66,7 +61,7 @@ public class recursion {
 
     // R24. Remove a character
     static String removeCharacter(String str, char target) {
-        if (str.length() == 0) {
+        if (str.isEmpty()) {
             return "";
         }
 
@@ -81,7 +76,7 @@ public class recursion {
 
     // R25. Replace a character
     static String replaceCharacter(String str, char oldChar, char newChar) {
-        if (str.length() == 0) {
+        if (str.isEmpty()) {
             return "";
         }
 
@@ -93,10 +88,6 @@ public class recursion {
 
         return first + replaceCharacter(str.substring(1), oldChar, newChar);
     }
-
-    // ============================================================
-    // LEVEL 4 — RECURSION + ARRAYS
-    // ============================================================
 
     // R26. Print array
     static void printArray(int[] arr, int index) {
@@ -205,10 +196,6 @@ public class recursion {
 
         reverseArray(arr, left + 1, right - 1);
     }
-
-    // ============================================================
-    // LEVEL 5 — COMMON DSA RECURSION
-    // ============================================================
 
     // R35. Binary Search
     static int binarySearch(
@@ -348,11 +335,6 @@ public class recursion {
                 destination
         );
     }
-
-    // ============================================================
-    // LEVEL 6 — MULTIPLE RECURSION / BACKTRACKING BASICS
-    // ============================================================
-
     // R39. Fibonacci sequence
     static void printFibonacci(int n, int a, int b) {
 
@@ -419,7 +401,7 @@ public class recursion {
         );
 
         // Backtrack
-        current.remove(current.size() - 1);
+        current.removeLast();
     }
 
     // R42. Generate permutations
@@ -427,7 +409,7 @@ public class recursion {
             String str,
             String current) {
 
-        if (str.length() == 0) {
+        if (str.isEmpty()) {
             System.out.println(current);
             return;
         }
@@ -447,9 +429,6 @@ public class recursion {
         }
     }
 
-    // ============================================================
-    // LEVEL 7 — ADVANCED BACKTRACKING
-    // ============================================================
 
     // R43. Rat in a Maze
     static void ratMaze(
@@ -508,11 +487,7 @@ public class recursion {
         maze[row][col] = 1;
     }
 
-    // ============================================================
-    // MAIN METHOD — PART 2 TESTING
-    // ============================================================
-
-    public static void main(String[] args) {
+    void main() {
 
         System.out.println("\nR19 - Print String:");
         printString("JAVA", 0);
