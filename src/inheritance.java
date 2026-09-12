@@ -1,14 +1,10 @@
 /*
- * OOP Principle - Inheritance
+ # OOP Principle - Inheritance
+ -> Inheritance allows a child class to acquire properties and methods of a parent class.
+ Parent Class  -> Superclass
+ Child Class   -> Subclass
 
- * Inheritance allows a child class to acquire
- * properties and methods of a parent class.
- *
- * Parent Class  -> Superclass
- * Child Class   -> Subclass
- *
- * Syntax:
- * class Child extends Parent
+ -> Syntax: class Child extends Parent
  */
 class inheritance{
 // Parent class
