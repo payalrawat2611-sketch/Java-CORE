@@ -1,21 +1,15 @@
 /*
- * OOP Principle - Polymorphism
- *
- * Polymorphism means "many forms".
- *
- * There are two main types:
- *
- * 1. Compile-time Polymorphism
- *    -> Method Overloading
- *
- * 2. Runtime Polymorphism
- *    -> Method Overriding
+ # OOP Principle - Polymorphism
+ --> Polymorphism means "many forms".
+ -> There are two main types:
+ 1. Compile-time Polymorphism
+     -> Method Overloading
+ 2. Runtime Polymorphism
+     -> Method Overriding
  */
 
-
-// --------------------------------------
 // Compile-time Polymorphism
-// --------------------------------------
+
 
 class Calculator {
 
@@ -33,11 +27,7 @@ class Calculator {
         return a + b;
     }
 }
-
-
-// --------------------------------------
 // Runtime Polymorphism
-// --------------------------------------
 
 class Animal {
 
@@ -45,8 +35,6 @@ class Animal {
         System.out.println("Animal makes a sound.");
     }
 }
-
-
 // Child class
 class Dog extends Animal {
 
@@ -71,9 +59,7 @@ public class Polymorphism {
 
     public static void main(String[] args) {
 
-        // ======================================
         // 1. Compile-time Polymorphism
-        // ======================================
 
         Calculator calculator = new Calculator();
 
@@ -91,10 +77,7 @@ public class Polymorphism {
 
         System.out.println();
 
-
-        // ======================================
         // 2. Runtime Polymorphism
-        // ======================================
 
         System.out.println("Runtime Polymorphism:");
 
