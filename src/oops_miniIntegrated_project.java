@@ -18,10 +18,6 @@
 
     abstract class student {
 
-        // ==================================================
-        // ENCAPSULATION
-        // ==================================================
-
         private int rollNo;
         private String name;
         private double marks;
@@ -76,10 +72,6 @@
         EngineeringStudent(int rollNo, String name, double marks) {
             super(rollNo, name, marks);
         }
-
-        // ==================================================
-        // POLYMORPHISM - METHOD OVERRIDING
-        // ==================================================
 
         @Override
         String calculateGrade() {
