@@ -13,11 +13,9 @@ public class collections_03 {
 
        System.out.println("Original LinkedList: " + names);
 
-       // Adding element at the beginning
        names.addFirst("Riya");
        System.out.println("After addFirst(): " + names);
 
-       // Adding element at the end
        names.addLast("Karan");
        System.out.println("After addLast(): " + names);
 
@@ -25,11 +23,10 @@ public class collections_03 {
        System.out.println("First element: " + names.getFirst());
        System.out.println("Last element: " + names.getLast());
 
-            // Updating an element
+       // crud operatins :
        names.set(1, "Priya");
        System.out.println("After updating: " + names);
 
-            // Removing first element
        names.removeFirst();
        System.out.println("After removeFirst(): " + names);
 
