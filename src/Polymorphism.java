@@ -8,12 +8,11 @@
      -> Method Overriding
  */
 
-// Compile-time Polymorphism
+// Compile-time Polymorphism : Same method name with different parameters
 
 
 class Calculator {
 
-    // Same method name with different parameters
 
     int add(int a, int b) {
         return a + b;
