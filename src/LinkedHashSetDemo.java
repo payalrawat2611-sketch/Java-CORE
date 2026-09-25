@@ -43,9 +43,7 @@ public class LinkedHashSetDemo {
 
         System.out.println("After clear: " + numbers);
     }
-}
 
-//
 //Remember :
 //LinkedHashSet
 //→ Unique elements
