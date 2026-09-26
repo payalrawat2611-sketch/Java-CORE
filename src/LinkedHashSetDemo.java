@@ -2,7 +2,7 @@ import java.util.LinkedHashSet;
 
 public class LinkedHashSetDemo {
 
-    public static void main(String[] args) {
+    void main() {
 
         // Creating a LinkedHashSet
         LinkedHashSet<Integer> numbers = new LinkedHashSet<>();
@@ -43,6 +43,7 @@ public class LinkedHashSetDemo {
 
         System.out.println("After clear: " + numbers);
     }
+}
 
 //Remember :
 //LinkedHashSet
