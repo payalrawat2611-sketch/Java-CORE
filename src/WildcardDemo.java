@@ -34,3 +34,15 @@ public class WildcardDemo {
         printList(names);
     }
 }
+
+/*
+Main concept : List<?> list
+
+means: "The exact type of this list is unknown to us, but we know it is a List."
+
+Therefore both work:
+printList(List<Integer>);
+printList(List<String>);
+
+But we generally cannot add an arbitrary value to a List<?>, because its actual element type is unknown.
+*/
