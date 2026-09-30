@@ -1,4 +1,4 @@
-class MyTask implements Runnable {
+class Task implements Runnable {
 
     @Override
     public void run() {
