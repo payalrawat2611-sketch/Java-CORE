@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Scanner;
 public class quizApp {
 
     private String question;
@@ -23,35 +21,16 @@ public class quizApp {
     public boolean isCorrect(int answer) {
         return answer == correctAnswer;
     }
-}
 
-class Quiz {
-
-    private ArrayList<quizApp> questions;
-    private int score;
-
-    public Quiz() {
-        questions = new ArrayList<>();
-        score = 0;
+    public String getCorrectAnswer() {
+        return options[correctAnswer - 1];
     }
 
-    public void addQuestion(quizApp question) {
-        questions.add(question);
+    public String getQuestion() {
+        return question;
     }
 
-    public void startQuiz() {
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println();
-        System.out.println("          JAVA QUIZ");
-        System.out.println();
-
-        for (quizApp question : questions) {
-
-            question.displayQuestion();
-
-            System.out.print("Enter your answer: ");
-        }
+    public String getOption(int answer) {
+        return options[answer - 1];
     }
 }
