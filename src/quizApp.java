@@ -28,7 +28,7 @@ import java.util.Scanner;
 
 public class Quiz {
 
-    private ArrayList<Question> questions;
+    private ArrayList<quizApp> questions;
     private int score;
 
     public Quiz() {
@@ -36,7 +36,7 @@ public class Quiz {
         score = 0;
     }
 
-    public void addQuestion(Question question) {
+    public void addQuestion(quizApp question) {
         questions.add(question);
     }
 
@@ -44,9 +44,9 @@ public class Quiz {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("================================");
+        System.out.println();
         System.out.println("          JAVA QUIZ");
-        System.out.println("================================");
+        System.out.println();
 
         for (Question question : questions) {
 
@@ -63,17 +63,12 @@ public class Quiz {
             }
         }
 
-        System.out.println("\n================================");
+        System.out.println();
         System.out.println("             RESULT");
-        System.out.println("================================");
+        System.out.println();
         System.out.println("Score: " + score + "/" + questions.size());
     }
 }
-```
-
-        ### `Main.java`
-
-        ```java
 public class Main {
 
     public static void main(String[] args) {
